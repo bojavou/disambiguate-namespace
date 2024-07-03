@@ -1,1 +1,1 @@
-export { substance } from './source2.mjs'
+export { value } from './substance2.mjs'
