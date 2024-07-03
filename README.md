@@ -1,5 +1,15 @@
 ## Disambiguate Namespaces
 
+Namespace exports through wildcards are not disambiguated in Node.js. 
+
+The folders in this repo demonstrate a few situations. `entry.mjs` is a CLI entrypoint. `index.html` is a browser entrypoint.
+
+- `collide` shows a collision, intended to raise an error. This throws everywhere.
+- `resolve-value` shows disambiguation of a value within a module. This succeeds everywhere.
+- `resolve-namespace` shows disambiguation of a module namespace. This succeeds in Firefox but throws in Node.js.
+
+### Explanation
+
 ECMAScript star exports relay all exported names.
 
 ```js
