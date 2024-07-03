@@ -106,7 +106,7 @@ export * as substance from './substance.mjs'
 ```
 
 ```js
-// relay.mjs
+// relay2.mjs
 export * as substance from './substance.mjs'
 ```
 
