@@ -12,6 +12,8 @@ The folders in this repo demonstrate a few situations. `entry.mjs` is a CLI entr
 
 ECMAScript star exports relay all exported names.
 
+![simple](doc/simple.png)
+
 ```js
 // substance.mjs
 export const value = 'Curiouser and curiouser.'
@@ -30,6 +32,8 @@ console.log(value)
 ```
 
 If multiple star exports offer the same name, the name is ambiguous. Accessing it raises an error.
+
+![collide](doc/collide.png)
 
 ```js
 // substance1.mjs
@@ -56,6 +60,8 @@ console.log(value)
 ```
 
 Where different star exports take different paths to the same ultimate value, the name is unambiguous. Import logic disambiguates and provides the value.
+
+![disambiguate-value](doc/disambiguate-value.png)
 
 ```js
 // substance.mjs
@@ -86,6 +92,8 @@ console.log(value)
 ```
 
 Namespace exports are meant to disambiguate in the same way. Firefox does this but Node.js raises an error.
+
+![disambiguate-namespace](doc/disambiguate-namespace.png)
 
 ```js
 // substance.mjs
