@@ -126,5 +126,5 @@ console.log(substance)
 
 // Node.js:
 // SyntaxError: The requested module './aggregate.mjs'
-// contains conflicting star exports for name 'value'
+// contains conflicting star exports for name 'substance'
 ```
